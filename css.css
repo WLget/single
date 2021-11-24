@@ -1,0 +1,125 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,from,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{
+font-size:1em;
+font-family:Arial, Helvetica, sans-serif;
+box-sizing:border-box;
+box-sizing:-moz-border-box; /* Firefox */
+box-sizing:-webkit-border-box; /* Safari */
+}
+li{list-style:none;}
+input,select,textarea{outline:none;border:none;background:none;}
+textarea{resize:none;}
+a{text-decoration:none; color:#656565;}
+
+/*======================*/
+/*----------clear---------*/
+/*======================*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+
+/*栏目开始*/
+.body_all{
+	max-width: 800px;
+	margin: 0 auto;
+}
+/*banner*/
+.top_top img{
+	width: 100%;
+	display: block;
+}
+/*biaoti*/
+.Top_title_kuang{
+	width: 100%;
+	margin: 2% 0;
+	background: url(https://photo.yitagroup.com/sh_Photos/ebay/us/Banner/Xiu_Banner_bg.jpg) repeat-x;
+	color: #fff;
+	font-size: 1.15rem;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+.Top_title_kuang p{
+	padding: 2.4% 0 4%;
+}
+/*show*/
+#show{
+	width: 88%;
+	background: #353535;
+	padding:3% 6%;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+#show img{
+	width: 100%;
+}
+/*description*/
+.lm_1{
+	max-width:800px;
+	margin: 2% auto 0;
+	font-size:1.5rem;
+	color:#FFF;
+	font-weight:bold;	background:url(https://photo.yitagroup.com/sh_Photos/ebay/us/Banner/Xiu_LM_bg.jpg) repeat-x;
+	-moz-border-radius: 15px 15px 0px 0px; 
+	-webkit-border-radius: 15px 15px 0px 0px;
+	border-radius: 15px 15px 0px 0px;
+}
+.lm_1 span{
+	display: block;
+	padding: 3% 0 2.6% 2%;
+}
+.lm_nr{
+	max-width: 768px;
+/*	width: 96%;*/
+	margin:0 auto;
+	background: #353535;
+	padding: 16px;
+	color: #C9C9C9;
+}
+.lm_nr .imglg{
+	float: left;
+	display: inline;
+	max-width: 350px;
+	padding: 10px;
+	border: 1px #ABABAB dotted;
+	margin: 0 1% 1% 0;
+}
+.lm_nr p img{
+	width: 100% !important;
+	height: auto !important;
+	display: block;
+	margin-bottom: 8px;
+}
+
+/*max-width800px*/
+@media screen and (max-width:799px){
+	.Top_title_kuang{
+		font-size: 1rem;
+	}
+	.lm_nr .imglg{
+		display: none;
+	}
+}
+@media screen and (max-width:400px){
+	.Top_title_kuang{
+		font-size: 0.75rem;
+		background-image:none !important;
+		background-color: #000;
+		margin: 2% 0 0; 
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	#show{
+		width: 92%;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		padding: 3% 4%;
+	}
+	.lm_1{
+		font-size: 1.3rem;
+	}
+}
